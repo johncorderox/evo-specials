@@ -25,24 +25,31 @@ class Special extends Component {
 
    return (
      <div>
-          {this.state.api.map(obj =>
-
-            <div class="card">
-            <div class="card-header">
-              Featured
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-              <img src={"http://www.latesttraveloffers.com"+obj.supplier_logo} alt="logo"/> <br />
-              {obj.title}<br />
-              {obj.start_date} - {obj.end_date}<br />
-               </li>
-                ${obj.price_per_night} USD/Night
-            </ul>
+     <div class="card">
+       <img src="..." class="card-img-top" alt="image" />
+       <div class="card-body">
+         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>
+       </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="image" />
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>
+        </div>
+       </div>
+       <div class="card">
+         <img src="..." class="card-img-top" alt="image" />
+         <div class="card-body">
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>
+         </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="image" />
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>
           </div>
-
-        )}
-     </div>
+         </div>
+    </div>
    );
  }
 }
