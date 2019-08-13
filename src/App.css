@@ -1,13 +1,13 @@
 .App {
   text-align: center;
   width: 340px;
-  box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 6px 16px -6px black;
 }
 
 .App-logo {
-  height: 150px;
-  width: 240px;
-  margin-bottom: 25px;
+  height: 100px;
+  width: 140px;
+  margin-bottom: 15px;
 }
 
 .App-specials {
@@ -19,9 +19,10 @@
   color: black;
 }
 
-.specials {
-  max-height: 450px;
+.content {
   overflow-y: scroll;
+  overflow-x: hidden;
+  height: 250px;
 }
 
 .card {

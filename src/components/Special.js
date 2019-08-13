@@ -16,7 +16,6 @@ class Special extends Component {
         this.setState({
             api: response.data
         })
-        console.log(response.data);
     })
     .catch(error => console.log(error))
 }
@@ -25,30 +24,17 @@ class Special extends Component {
 
    return (
      <div>
+     {this.state.api.map(obj =>
      <div class="card">
-       <img src="..." class="card-img-top" alt="image" />
        <div class="card-body">
-         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>
+         <p class="card-text">
+         <img src={"http://www.latesttraveloffers.com"+obj.supplier_logo} />
+         <br />
+         {obj.title}</p>
+         <p class="card-text">${obj.price_per_night} USD/Night</p>
        </div>
       </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="image" />
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>
-        </div>
-       </div>
-       <div class="card">
-         <img src="..." class="card-img-top" alt="image" />
-         <div class="card-body">
-           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>
-         </div>
-        </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="image" />
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>
-          </div>
-         </div>
+          )}
     </div>
    );
  }
