@@ -48,17 +48,17 @@ startSearch = (e) => {
       }
       </div>
       <div className="footer">
-      <ul class="nav nav-pills nav-fill">
-        <li class="nav-item">
-          <a class="nav-link active" href="#" onClick={this.home}>
-            <i class="fas fa-list"></i>
+      <ul className="nav nav-pills nav-fill">
+        <li className="nav-item">
+          <a className="nav-link active" href="#" onClick={this.home}>
+            <i className="fas fa-list"></i>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" onClick={this.startSearch}><i class="fas fa-search"></i></a>
+        <li className="nav-item">
+          <a className="nav-link" href="#" onClick={this.startSearch}><i className="fas fa-search"></i></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fas fa-id-card"></i></a>
+        <li className="nav-item">
+          <a className="nav-link" href="#"><i className="fas fa-id-card"></i></a>
         </li>
       </ul>
       </div>

@@ -4,10 +4,5 @@
   "author": "John Cordero",
   "version": "1.0.1",
   "description": "Displays travel specials from our API",
-  "icons": {
-    "16": "logo.png",
-    "48": "logo.png",
-    "128": "logo.png"
-  },
   "permissions": ["storage"]
 }

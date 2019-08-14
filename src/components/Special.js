@@ -25,13 +25,13 @@ class Special extends Component {
    return (
      <div>
      {this.state.api.map(obj =>
-     <div class="card">
-       <div class="card-body">
-         <p class="card-text">
-         <img src={"http://www.latesttraveloffers.com"+obj.supplier_logo} />
+     <div className="card" key={obj.id}>
+       <div className="card-body">
+         <p className="card-text">
+         <img src={"http://www.latesttraveloffers.com"+obj.supplier_logo} alt="special"/>
          <br />
          {obj.title}</p>
-         <p class="card-text">${obj.price_per_night} USD/Night</p>
+         <p className="card-text">${obj.price_per_night} USD/Night</p>
        </div>
       </div>
           )}

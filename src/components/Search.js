@@ -6,8 +6,11 @@ class Search extends Component {
   constructor(props) {
   super();
   this.state = {
-    query: ''
+    query: '',
+    suppliers: ["Regent", "Oceania", "Norwegian", "Azamara", "Seabourn", "Celebrity",
+     "Holland America", "MSC", "Silversea", "Carnival", "Royal Caribbean"]
     };
+
 
 }
 
@@ -18,8 +21,10 @@ class Search extends Component {
   }
 
  render() {
+
+
   return (
-    <div className="App">
+    <div>
       <form>
         <input type="text"
          className="form-control"
@@ -28,7 +33,8 @@ class Search extends Component {
           ref={input => this.search = input} onChange={this.handleInputChange}
            />
       </form>
-      {this.state.query}
+      {this.state.suppliers.map(obj => <p key={obj.id}>{obj}</p> )}
+
     </div>
   );
  }

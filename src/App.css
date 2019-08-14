@@ -40,3 +40,7 @@ padding: 20px;
 .nav-pills .nav-link.active {
   background-color: #08549c !important;
 }
+
+form {
+  margin-bottom: 25px;
+}
