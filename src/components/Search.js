@@ -7,11 +7,9 @@ class Search extends Component {
   super();
   this.state = {
     query: '',
-    suppliers: ["Regent", "Oceania", "Norwegian", "Azamara", "Seabourn", "Celebrity",
-     "Holland America", "MSC", "Silversea", "Carnival", "Royal Caribbean"]
+    suppliers: ["Regent Seven Seas Cruises", "Oceania Cruises", "Norwegian Cruise Line", "Azamara", "Seabourn", "Celebrity Cruises",
+     "Holland America Line", "MSC Cruises", "Silversea", "Carnival", "Royal Caribbean International", "Princess", "Disney Cruise Lines", "American Steamboats", "AMA Waterways"]
     };
-
-
 }
 
   handleInputChange = () => {
@@ -21,20 +19,21 @@ class Search extends Component {
   }
 
  render() {
-
-
   return (
     <div>
       <form>
         <input type="text"
          className="form-control"
          placeholder="Type a Supplier Name"
-          autofocus="true"
+          autoFocus={true}
           ref={input => this.search = input} onChange={this.handleInputChange}
            />
       </form>
-      {this.state.suppliers.map(obj => <p key={obj.id}>{obj}</p> )}
-
+      <div className="search-results">
+      {this.state.suppliers.map(function(obj, idx){
+        return (<p key={idx}>{obj}</p>)
+        })}
+      </div>
     </div>
   );
  }

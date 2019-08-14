@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from 'axios'
+import SpecialCount from '../components/SpecialCount';
 
 class Special extends Component {
 
@@ -11,7 +12,7 @@ class Special extends Component {
 
  }
  componentDidMount() {
-    axios.get('http://localhost:3000/passport_online/api/v1/specials')
+    axios.get('')
     .then(response => {
         this.setState({
             api: response.data
@@ -24,16 +25,21 @@ class Special extends Component {
 
    return (
      <div>
+     <SpecialCount count={this.state.api.length}/>
      {this.state.api.map(obj =>
+
      <div className="card" key={obj.id}>
        <div className="card-body">
          <p className="card-text">
-         <img src={"http://www.latesttraveloffers.com"+obj.supplier_logo} alt="special"/>
+         <img className="image-card"src={"http://www.latesttraveloffers.com"+obj.offer_image} alt="special"/>
          <br />
-         {obj.title}</p>
+         </p>
+         <a href={obj.url}>
+         {obj.title}</a>
          <p className="card-text">${obj.price_per_night} USD/Night</p>
        </div>
       </div>
+
           )}
     </div>
    );

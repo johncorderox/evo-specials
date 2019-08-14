@@ -6,7 +6,7 @@
 
 .App-logo {
   height: 100px;
-  width: 140px;
+  width: 185px;
   margin-bottom: 15px;
 }
 
@@ -23,6 +23,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   height: 250px;
+  background-color: #F7FAFF;
 }
 
 .card {
@@ -31,6 +32,7 @@
 
 .footer {
 padding: 20px;
+
 }
 
 .fas {
@@ -43,4 +45,32 @@ padding: 20px;
 
 form {
   margin-bottom: 25px;
+}
+
+.evo-btn {
+  margin-top: 5px;
+  border: 0px white;
+  padding: 10px;
+}
+
+
+.active,.evo-btn:hover {
+  background-color: #08549c;
+  color:white;
+  border-radius: 3px;
+}
+
+.count {
+  background-color: white;
+  padding: 5px;
+}
+
+.search-results p{
+  background-color:white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.image-card {
+  width: 50%;
 }

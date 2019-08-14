@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Logo from '../components/Logo';
 import Special from '../components/Special';
 import Search from '../components/Search';
+import Contact from '../components/Contact';
 
 class Container extends Component {
 
@@ -33,6 +34,15 @@ startSearch = (e) => {
   })
 };
 
+contact = (e) => {
+  e.preventDefault();
+  this.setState({
+      home: false,
+      search: false,
+      contact: true
+  })
+};
+
  render() {
   return (
     <div className="App">
@@ -46,19 +56,28 @@ startSearch = (e) => {
       {this.state.search &&
         <Search />
       }
+      {this.state.contact &&
+        <Contact />
+      }
       </div>
       <div className="footer">
       <ul className="nav nav-pills nav-fill">
         <li className="nav-item">
-          <a className="nav-link active" href="#" onClick={this.home}>
+          <button
+          className={this.state.home ? ' evo-btn active' : ' evo-btn'}
+          onClick={this.home}>
             <i className="fas fa-list"></i>
-          </a>
+            </button>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#" onClick={this.startSearch}><i className="fas fa-search"></i></a>
+          <button
+          className={this.state.search ? ' evo-btn active' : ' evo-btn'}
+           onClick={this.startSearch}><i className="fas fa-search"></i></button>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#"><i className="fas fa-id-card"></i></a>
+          <button className={this.state.contact ? ' evo-btn active' : ' evo-btn'}
+          onClick={this.contact}>
+           <i className="fas fa-id-card"></i></button>
         </li>
       </ul>
       </div>
