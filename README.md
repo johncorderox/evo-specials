@@ -10,3 +10,5 @@ The EVO specials extension is built with React JS and is currently in developmen
 * USA Supplier Search 
 * Contact Page & Travel Agent Registration 
 
+## About the Author
+I'm a Software Engineer at [Evolution Travel](http://www.myevolutiontravel.com/)  building and deploying apps in rails daily. You can find more about me [here](http://johncorderox.com).
