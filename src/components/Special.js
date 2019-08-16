@@ -12,7 +12,7 @@ class Special extends Component {
 
  }
  componentDidMount() {
-    axios.get('')
+    axios.get('http://localhost:3000/passport_online/api/v1/specials')
     .then(response => {
         this.setState({
             api: response.data

@@ -5,7 +5,7 @@ class Contact extends Component {
 
  render() {
   return (
-        <div>
+        <div className="contact">
           <div className="row">
             <div className="col-2 offset-1">
             <i className="fas fa-phone"></i>

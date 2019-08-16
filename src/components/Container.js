@@ -30,7 +30,8 @@ startSearch = (e) => {
   e.preventDefault();
   this.setState({
       home: false,
-      search: true
+      search: true,
+      contact: false
   })
 };
 

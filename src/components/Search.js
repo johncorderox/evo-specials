@@ -12,13 +12,16 @@ class Search extends Component {
     };
 }
 
-  handleInputChange = () => {
+  handleInputChange = (e) => {
     this.setState({
-      query: this.search.value
+      query: e.target.value
     })
   }
 
+
  render() {
+
+
   return (
     <div>
       <form>
@@ -26,7 +29,8 @@ class Search extends Component {
          className="form-control"
          placeholder="Type a Supplier Name"
           autoFocus={true}
-          ref={input => this.search = input} onChange={this.handleInputChange}
+          onChange={e => this.handleOnChange(e)}
+          value={this.state.query}
            />
       </form>
       <div className="search-results">

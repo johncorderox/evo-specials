@@ -22,7 +22,7 @@
 .content {
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 250px;
+  height: 450px;
   background-color: #F7FAFF;
 }
 
@@ -73,4 +73,7 @@ form {
 
 .image-card {
   width: 50%;
+}
+.contact {
+  background-color: white;
 }
