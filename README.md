@@ -14,4 +14,5 @@ The EVO specials extension is built with React JS and is currently in developmen
 This repo is under the Apache License 2.0 license and you can read more about it [here](https://github.com/johncorderox/evo-specials/blob/master/LICENSE).
 
 ## About the Author
-I'm a Software Engineer at [Evolution Travel](http://www.myevolutiontravel.com/)  building and deploying apps in rails daily. You can find more about me [here](http://johncorderox.com).
+[Evolution Travel](http://www.myevolutiontravel.com/)
+We are a team of Engineers building in Ruby and React daily :) 
